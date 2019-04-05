@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Mozg. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+--> 
+<config>
+    <sections>
+        <mozg_checkoutfilters translate="label" module="mozg_checkoutfilters">
+            <label>Checkout Filters</label>
+            <tab>mozg</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <payment translate="label">
+                    <label>Payment</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <free_hide_other>
+                            <label>Hide other payment for zero totals</label>
+                            <comment><![CDATA[<a href="https://github.com/mozgbrasil/magento-checkout-filters-php_72#-ocultar-método-de-pagamento-para-total-zero" target="_blank">__?__</a>]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </free_hide_other>
+                    </fields>
+                </payment>
+                <save_billing translate="label">
+                    <label>Save Billing</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <checks_legal_age>
+                            <label>Checks the legal age</label>
+                            <comment><![CDATA[<a href="https://github.com/mozgbrasil/magento-checkout-filters-php_72#-ocultar-método-de-pagamento-para-total-zero" target="_blank">__?__</a>]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </checks_legal_age>
+                    </fields>
+                </save_billing>
+            </groups>
+        </mozg_checkoutfilters>
+        <carriers translate="label">
+            <groups>
+                <mozg_jadlog translate="label" module="mozg_jadlog">    
+                    <fields>                    
+                        <show_only_correios_offline translate="label,comment">
+                            <label>Only display if the shipping method Correios is offline</label>
+                            <comment><![CDATA[]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </show_only_correios_offline>
+
+                     </fields>
+                </mozg_jadlog>
+            </groups>
+        </carriers>
+    </sections>
+</config>

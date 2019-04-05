@@ -1,0 +1,4 @@
+## Modman Module Mozg
+app/code/local/Mozg/CheckoutFilters/	app/code/local/Mozg/CheckoutFilters/
+app/etc/modules/Mozg_CheckoutFilters.xml	app/etc/modules/Mozg_CheckoutFilters.xml
+app/locale/pt_BR/Mozg_CheckoutFilters.csv	app/locale/pt_BR/Mozg_CheckoutFilters.csv
